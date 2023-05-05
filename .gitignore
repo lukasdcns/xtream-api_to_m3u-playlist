@@ -1,2 +1,3 @@
 exports/series/*
-exports/vods/*
+exports/vods/jellyfin/*
+exports/vods/plex/*
