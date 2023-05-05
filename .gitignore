@@ -1,1 +1,2 @@
-./exports
+exports/series/*
+exports/vods/*
