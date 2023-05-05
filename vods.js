@@ -12,9 +12,9 @@ axios.get(vodsUrl)
           let vodName = vod.name.replace("FR - ", "").replace(/\s*\(\d+\)/, "").replace("/", " ").replace(" - 4K", "").replace(" 4K", "");
   
           const jellyFinFilePath = `exports/vods/jellyfin/${vodName}.strm`;
-          const plexFinFilePath = `exports/vods/plex/${vodName}.fr.srt`;
+          //const plexFinFilePath = `exports/vods/plex/${vodName}.fr.srt`;
           fs.writeFileSync(jellyFinFilePath, `http://smart.cwdn.cx/movie/a804691ee2/12345678/${vod.stream_id}.${vod.container_extension}`);
-          fs.writeFileSync(plexFinFilePath, `http://smart.cwdn.cx/movie/a804691ee2/12345678/${vod.stream_id}.${vod.container_extension}`);
+          //fs.writeFileSync(plexFinFilePath, `http://smart.cwdn.cx/movie/a804691ee2/12345678/${vod.stream_id}.${vod.container_extension}`);
         }
       }
     });
